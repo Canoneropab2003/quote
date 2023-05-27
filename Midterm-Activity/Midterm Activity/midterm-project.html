@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapping-Midterm Project</title>
+  <link rel="stylesheet" href="midterm-project.css">
+  <link rel="icon" type="image/x-icon" href="images/web-logo.png">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.ph-map').maphilight();
+    $('#region').maphilight();
+  });
+</script>
+<body>
+  <div class="wrapper">
+
+          <div class="topnav">
+            <div class="web-logo">
+              <img src="images/web-logo.png">
+            </div>
+            <div class="nav-a">
+              <a class="active" href="#home">Home</a>
+              <a href="about.html">About</a>
+              <a href="#list-Of-Regions" target="">Regions</a>
+              <a href="description.html">Midterm</a>
+            </div>	
+              <div class="search-container">
+                  <form>
+                  <input type="text" placeholder="Search.." name="search">
+                  </form>
+              </div>
+          </div>
+
+      <div class="ph">
+        <div class="img-div">
+          <img src="images/ph.png" usemap="#image-map" class="ph-map">
+
+          <map name="image-map">
+            <area target="" alt="Luzon" title=
+"Cagayan Valley
+Ilocos Region
+Cordillera Administrative Region
+Central Luzon
+CALABARZON
+MIMAROPA
+Bicol Region" 
+                href="#region" coords="213,305,208,293,195,288,197,299,193,305,184,299,182,289,176,291,170,273,165,255,165,243,160,226,166,218,173,224,181,233,188,228,182,209,186,197,190,190,189,180,189,171,186,161,191,142,197,128,205,120,214,123,221,121,231,129,246,135,254,137,262,130,262,124,269,134,259,136,263,145,263,162,264,171,268,178,273,180,270,188,278,188,274,199,266,215,265,224,257,231,256,234,244,227,248,232,235,241,239,244,241,249,231,265,237,279,242,292,242,305,245,315,257,325,265,328,254,315,263,319,267,314,275,309,288,310,297,318,302,326,302,336,310,336,312,327,311,318,330,326,337,332,344,333,347,319,358,329,358,337,349,342,327,336,321,340,324,344,332,349,340,354,347,357,349,365,346,380,344,387,329,379,332,393,342,409,343,420,329,411,320,401,304,414,309,401,308,385,317,387,324,392,323,382,313,378,296,363,299,357,309,369,325,371,317,364,311,357,307,347,296,341,289,334,279,327,277,337,282,346,285,355,279,357,273,345,263,338,240,328,231,332,231,339,249,345,256,343,261,347,258,355,247,350,222,339,223,349,232,359,237,363,236,370,257,383,264,381,271,385,277,388,285,390,282,399,275,394,263,387,260,394,257,405,253,390,236,377,235,385,230,395,221,400,212,389,205,369,196,358,184,407,181,417,175,421,166,434,159,450,150,454,155,465,159,471,165,468,162,476,155,477,144,481,138,492,123,497,118,503,119,509,103,529,92,532,85,543,75,551,68,555,62,559,55,566,60,569,52,575,47,586,42,591,44,577,59,549,74,535,87,525,111,504,124,483,131,477,137,472,144,467,139,455,145,458,140,444,146,444,149,434,154,437,168,422,166,410,173,410,164,400,168,396,174,401,195,349,188,347,196,341,204,342,212,345,215,333,214,320,210,325,202,326,196,329,194,312,204,310" shape="poly">
+            <area target="" alt="Visayas" title=
+"Western Visayas
+Central Visayas
+Eastern Visayas"  
+                coords="350,384,364,385,374,384,381,382,387,381,393,387,396,394,402,400,401,406,400,418,405,431,408,437,414,449,418,454,405,445,396,445,385,438,381,451,382,461,388,470,392,478,391,489,394,496,380,479,384,492,371,488,363,491,363,501,357,509,349,512,341,512,333,510,327,513,331,502,335,495,341,491,346,487,355,488,372,479,373,465,370,455,363,449,360,454,362,460,358,465,352,467,341,476,333,482,324,491,319,503,315,514,321,525,322,531,315,528,311,519,307,526,301,533,293,532,285,522,278,515,272,505,272,494,285,492,291,489,290,480,283,473,277,475,277,466,270,465,262,468,257,473,252,460,255,446,257,431,259,420,249,415,248,408,260,413,277,424,286,425,291,426,295,429,305,425,302,433,301,443,291,449,286,457,281,461,286,466,290,470,296,465,295,455,304,451,310,451,317,454,319,462,316,473,312,479,307,490,303,500,303,510,311,506,315,491,322,480,328,463,335,453,338,443,327,445,328,437,336,435,342,448,341,455,339,477,368,456,355,444,351,431,352,423,357,419,362,423,359,429,366,436,374,433,379,430,370,419,382,425,380,418,367,408,369,403,361,403,353,394" shape="poly">
+            <area target="" alt="Mindanao" title=
+"Zamboanga Peninsula
+Northern Mindanao
+Davao Region
+Soccsargen
+Caraga Region
+BARMM"  
+                coords="409,474,403,481,400,489,406,492,407,506,400,500,399,511,403,529,396,533,390,533,389,539,375,536,372,551,372,558,364,555,356,553,350,561,347,570,329,573,330,559,322,551,314,547,309,557,300,557,297,564,295,570,280,575,265,579,259,591,257,602,254,609,251,618,256,625,255,633,247,638,249,643,253,646,248,654,239,661,229,663,216,660,209,661,208,667,206,676,192,689,181,693,168,695,158,703,165,704,174,700,183,698,199,683,205,683,211,671,217,668,224,669,260,644,264,639,260,629,265,619,266,610,270,605,276,596,287,593,287,600,287,606,288,613,293,613,294,604,304,594,301,599,311,602,317,607,314,595,317,587,323,585,329,589,334,592,341,597,345,601,349,607,340,619,338,632,339,643,348,655,360,661,368,667,377,672,386,675,392,677,395,683,396,690,404,688,401,678,409,668,411,652,405,641,398,634,402,626,408,618,412,628,415,618,411,609,420,618,423,625,426,632,429,648,431,656,434,637,434,627,434,620,439,624,442,618,450,610,447,603,449,597,446,590,436,579,441,577,442,569,436,566,439,558,431,556,427,549,438,541,430,531,432,523,425,525,421,517,415,510,423,510,426,502,429,497,424,488,421,495,419,519,411,501" shape="poly">
+        </map>
+        </div>
+        <div class="description">
+          <h1>Luzon</h1>
+          <hr>
+          <p>
+            <strong>Luzon</strong> <i>(/luːˈzɒn/;</i> <small>Tagalog pronunciation:</small> [luˈson]) is the largest and most populous island in the <span>Philippines</span>. Located in the northern portion of the Philippines archipelago, it is the economic and political center of the nation, being home to the country's capital city, <span>Manila </span>, as well as <span>Quezon City</span>, the country's most populous city. With a population of 64 million as of 2021,<sup>[3]</sup> it contains 52.5% of the country's total population and is the fourth most populous island in the world.<sup>[4]</sup>  It is the 15th largest island in the world by land area.
+           <br>
+           <br> 
+             Luzon may also refer to one of the three primary island groups in the country. In this usage, it includes the Luzon mainland, the <span>Batanes</span> and Babuyan groups of islands to the north, Polillo Islands to the east, and the outlying islands of <span>Catanduanes, Marinduque and Mindoro</span>, among others, to the south.<sup>[5]</sup> The islands of <span>Masbate, Palawan and Romblon</span> are also included, although these three are sometimes grouped with another of the island groups, the <strong>Visayas</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="luzon-map">
+          <div class="img-div">
+            <img src="images/luzon_region.jpg" usemap="#region-map" id="region">
+
+            <map name="region-map">
+                <area  alt="Cagayan Valley" title=
+"Batanes 
+Cagayan 
+Isabela
+Nueva Vizcaya
+Quirino" 
+
+                    coords="273,164,273,171,284,170,290,173,299,178,307,183,309,190,306,199,302,207,299,214,304,224,309,229,316,236,319,240,317,247,313,255,311,264,312,271,313,278,311,284,308,288,298,293,294,298,285,303,273,304,267,305,264,319,257,328,268,335,282,337,293,359,310,343,328,330,344,306,359,306,372,279,377,268,368,270,368,250,359,253,353,237,348,217,353,202,364,182,355,166,348,175,339,186,319,179,285,160,293,144,304,142,333,144,341,133,335,135,317,144,295,144,288,128,288,120,295,131,317,144,337,137,339,137,337,91,333,42,346,26,333,2,322,9,333,13,335,24,333,40,337,97,339,131,313,135,295,128,297,115,299,111,308,102,313,111,282,159,288,161,293,165,301,169,306,173,311,178,284,157,285,160" shape="poly">
+                <area target="" alt="Ilocos Regions" title=
+"Ilocos Norte
+Ilocos Sur
+La Union
+Pangasisan"  
+                    coords="270,165,268,176,267,184,268,192,268,198,262,207,256,210,246,217,236,239,242,241,242,247,242,252,248,256,252,265,260,264,258,278,250,284,245,298,239,308,238,317,241,330,249,334,256,334,263,336,266,344,265,352,260,360,253,354,248,359,243,353,239,364,231,362,225,370,214,359,208,355,202,358,198,348,190,350,192,343,191,336,192,325,204,317,208,330,214,340,220,344,231,337,235,332,229,319,228,308,228,298,228,286,235,278,241,265,234,257,235,249,242,243,229,233,235,224,237,217,237,209,241,201,240,193,245,183,246,171,245,165,255,166,260,159" shape="poly">
+                <area target="" alt="Cordillera Administrative Region" title=
+"Abra
+Apayao
+Benguet
+Ifugao
+Kalinga
+Mountain Province"  
+                    coords="273,172,271,186,271,194,269,205,261,209,250,216,239,238,244,240,243,247,245,253,251,258,255,262,264,262,259,276,250,287,243,307,240,319,244,329,251,332,259,333,262,318,266,305,285,301,292,298,297,293,308,287,313,277,311,260,315,248,319,239,304,224,296,215,309,190,307,183,285,168" shape="poly">
+                <area target="" alt="Central Luzon" title=
+"Aurora
+Bataan
+Bulacan
+Nueva Ecija
+Pampanga
+Tarlac
+Zambales"  
+                    coords="356,310,346,309,332,329,292,362,286,353,286,341,276,338,267,339,270,347,267,353,263,359,255,356,249,359,246,354,242,362,232,362,226,369,211,358,200,357,200,363,202,371,204,379,201,385,205,391,209,403,212,415,213,424,217,430,226,427,223,435,233,444,235,452,246,453,247,440,243,437,243,425,251,429,259,432,265,431,273,431,280,428,287,427,295,420,300,405,302,395,299,387,305,387,307,376,316,370,313,366,317,365,312,361,313,352,325,340,335,336,342,333,351,327,348,329,341,340,341,345,346,337,356,327" shape="poly">
+                <area target="" alt="CALABARZON" title=
+"Batangas
+Cavite
+Laguna
+Quezon
+Rizal" 
+                    coords="303,400,301,408,297,417,298,423,290,427,282,429,282,437,284,444,287,450,288,451,291,447,295,451,298,456,294,464,301,457,306,459,295,469,287,469,283,463,276,458,280,446,282,440,282,433,271,435,274,446,274,451,267,454,259,460,252,465,247,471,249,481,247,491,251,498,257,494,258,487,268,492,269,499,265,505,265,511,273,507,275,499,277,511,281,509,289,510,298,510,306,505,304,502,309,494,321,490,326,487,338,495,351,503,356,510,364,513,373,524,378,533,377,540,388,542,389,526,382,518,372,503,376,498,367,486,378,491,379,488,395,483,370,472,367,478,362,487,356,489,345,487,330,480,323,472,322,463,317,450,316,438,315,427,311,416,308,407,303,401,331,412,337,411,343,414,343,419,346,423,353,426,358,429,362,433,370,433,373,438,366,437,362,433,344,422,343,429,342,438,338,438,337,429,334,422,304,398,318,445,321,436,318,436,326,461,333,463,345,477,357,486,360,479,352,475,356,469,360,469,370,483,353,484,337,471,321,449" shape="poly">
+                    <area target="" alt="National Capital Region" title="National Capital Region" coords="280,431,280,437,280,446,277,449,277,453,277,459,270,449,272,441,268,434,277,432" shape="poly">
+                <area target="" alt="MIMAROPA" title=
+"Marinduque
+Occidental Mindoro
+Oriental Mindoro
+Palawan
+Romblon"  
+                    coords="222,503,214,499,212,493,220,495,226,495,225,504,227,525,236,523,239,531,244,539,251,542,256,554,261,564,261,571,265,575,268,584,271,593,278,599,276,605,280,611,226,619,217,613,208,608,201,602,199,609,201,615,205,621,204,627,198,626,199,632,202,637,194,658,176,668,170,662,165,675,166,684,157,692,166,701,170,710,163,706,161,703,158,700,160,715,156,726,147,733,141,731,136,735,134,745,126,745,126,757,117,757,109,771,96,784,79,804,72,809,64,811,56,818,53,823,44,825,32,843,19,857,16,871,10,878,2,890,0,898,10,898,10,888,18,884,28,881,28,873,18,879,22,867,32,862,42,856,44,850,55,849,70,836,83,822,82,817,94,815,108,805,122,783,120,775,124,765,154,753,159,742,170,734,184,729,201,728,207,717,197,713,191,720,185,724,183,714,179,703,173,696,174,691,183,688,177,682,178,674,195,658,201,642,210,641,212,633,209,621,217,621,223,627,223,631,230,624,229,620,286,610,295,602,339,619,345,609,348,594,383,601,389,596,384,588,375,585,370,591,377,597,348,593,349,583,351,577,343,537,349,529,344,517,337,515,331,520,331,529,343,537,350,577,342,582,343,589,339,597,339,605,341,612,338,619,294,601,300,598,302,592,305,586,312,580,308,569,307,553,312,545,306,543,302,535,290,526,281,522,269,518,259,521,243,518,234,517,228,523" shape="poly">
+                <area target="" alt="Bicol Region" title=
+"Albay
+Camarines Norte
+Camarines Sur
+Catanduanes
+Masbate
+Sorsogon"  
+                    coords="365,474,366,465,377,461,385,464,391,460,397,465,407,473,411,477,414,484,414,490,413,500,421,503,431,499,431,492,427,487,428,479,436,481,438,488,450,491,462,491,473,499,483,503,487,495,486,483,491,478,498,488,506,497,503,509,498,513,490,515,480,509,473,499,466,502,457,503,447,503,445,509,447,513,451,521,458,527,461,532,463,535,466,529,472,532,478,533,489,538,482,540,471,536,459,536,459,543,462,548,469,545,476,547,481,552,488,549,488,555,485,560,486,568,484,580,480,585,471,579,466,566,472,562,479,560,475,554,468,556,459,561,451,560,438,551,432,550,450,577,462,585,463,598,469,610,478,624,481,633,480,640,471,631,458,625,451,615,445,607,438,606,432,613,420,629,423,614,429,607,424,603,428,595,425,582,433,587,445,587,450,596,461,607,459,594,451,577,427,566,415,558,406,549,405,542,414,543,419,552,423,560,430,566,450,577,433,549,428,546,432,540,426,535,421,527,419,521,407,517,398,509,397,503,389,497,380,489,395,482,363,470" shape="poly">
+            </map>
+        </div>
+        <div class="description">
+          <h1>Etymology</h1>
+          <hr>
+          <p>
+            The name Luzon is thought to derive from <i>lusong</i>, a Tagalog word referring to a particular kind of large wooden mortar used in dehusking rice.<sup>[6][7]</sup> A 2008 research paper by <span>Eulito Bautista</span> and <span>Evelyn Javier</span> provides an image of a lusong, explaining:
+            Traditional milling was accomplished in the 1900s by pounding the palay with a wooden pestle in a stone or wooden mortar called lusong. The first pounding takes off the hull and further pounding removes the bran but also breaks most grains. Further winnowing with a bamboo tray (bilao) separates the hull from the rice grains. This traditional hand-pounding chore, although very laborious and resulted in a lot of broken rice, required two to three skilled men and women to work harmoniously and was actually a form of socializing among young folks in the villages.<sup>[8]</sup>
+            In old Latin, Italian, and Portuguese maps, the island is often called "Luçonia" or "Luconia."<sup>[9][10][11][12][13][14][15][16]</sup><br>
+            <br>
+            Luções, [luˈsõjʃ] (also <i>Luzones</i> in Spanish) was a demonym<sup>[17]</sup> used by Portuguese sailors in <span>Malaysia</span><sup>[18]</sup> during the early 1500s, referring to the Kapampangan and Tagalog people who lived in Manila Bay, which was then called <i>Lusong </i>(Portuguese: Luçon), from which Luzon was also derived.<sup>[19][20][21][18]</sup> The term was also used for Tagalog settlers in Southern Tagalog region. Eventually, the term <span>"Luzones"</span> would refer to the settlers of Luzon island, and later on, would be exclusive to the peoples of Central Luzon.
+          </p>
+        </div>
+      </div>
+      <div class="table-region">
+        <h1 id="list-Of-Regions">Regions</h1>
+        <hr>
+        <table>
+          <tr class="heading">
+            <td>Regions</td>
+            <td>Six Divisions</td>
+            <td>Four Divisions</td>
+            <td>Three Divisions</td>
+            <td>Two Divisions</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/r01.html" target="_blank">Ilocos Region</a>
+            </td>
+            <td rowspan="2" style="text-align: center;">Ilocandia</td>
+            <td rowspan="3" style="text-align: center;">Northern Luzon</td>
+            <td rowspan="4" style="text-align: center;">Northern and Central Luzon</td>
+            <td rowspan="4" style="text-align: center;">Northern and Central Luzon</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/r02.html" target="_blank"> Cagayan Valley</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/car.html" target="_blank">Cordillera Administrative Region</a>
+            </td>
+            <td style="text-align: center;">Cordilleras</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/r03.html" target="_blank">Central Luzon</a>
+            </td>
+            <td colspan="2" style="text-align: center;">Central Luzon</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)" target="_blank">
+              <a href="https://www.philatlas.com/luzon/ncr.html">National Capital Region</a>
+            </td>
+            <td colspan="3" style="text-align: center;">Metro Manila</td>
+            <td rowspan="4" style="text-align: center;">Southern Luzon</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+             <a href="https://www.philatlas.com/luzon/r04a.html" target="_blank"> Calabarzon</a>
+            </td>
+            <td rowspan="2" style="text-align: center;">Southern Tagalog</td>
+            <td rowspan="3" style="text-align: center;">Southern Luzon</td>
+             <td rowspan="3" style="text-align: center;">Southern Luzon</td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/mimaropa.html" target="_blank"> Mimaropa</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:rgb(241, 241, 241)">
+              <a href="https://www.philatlas.com/luzon/r05.html" target="_blank"> Bicol Region</a>
+            </td>
+            <td style="text-align: center;">Bicolandia</td>
+          </tr>
+          <tr>
+            <td colspan="5" style=" background-color: rgb(103, 103, 103); text-align: center; color: white; ">
+              <div class="luzon-web">
+                Link: <a href="https://www.philatlas.com/luzon.html" title="Luzon Website" target="_blank" style="color: rgb(0, 162, 255)"> https://www.philatlas.com/luzon.html</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="button">
+      <button class="back-to-top">
+        <a href="midterm-project.html">
+          Back to the top
+        </a>
+      </button>
+      <div class="footer">
+        <p>
+          © Web Systems and Technologies Lec, Due by <b style="color: yellow">March 31, 2023 Friday</b>
+        </p>
+  </div>
+  </div>
+</body>
+</html>
